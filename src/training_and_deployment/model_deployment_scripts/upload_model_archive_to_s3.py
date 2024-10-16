@@ -7,6 +7,6 @@ s3 = boto3.resource('s3')
 
 s3.meta.client.upload_file(
     "./model_files_for_s3/model_archive.tar.gz",
-    "model-for-toucan-jasholtk-dev",
+    "custom-gpt-artifacts",
     f"{current_datetime}/model_archive.tar.gz"
 )
