@@ -270,3 +270,5 @@ cython_debug/
 
 # vscode
 .vscode/
+*.pth
+src/training_and_deployment/gpt2/*
