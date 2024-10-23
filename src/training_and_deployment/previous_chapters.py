@@ -248,6 +248,8 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
 # Chapter 5
 #####################################
 def generate(model, idx, max_new_tokens, context_size, temperature=0.0, top_k=None, eos_id=None):
+    device = next(model.parameters()).device
+    idx = idx.to(device)  # Ensure idx is on the same device as the model
 
     # For-loop is the same as before: Get logits, and only focus on last time step
     for _ in range(max_new_tokens):
