@@ -11,7 +11,7 @@ model_name = f"custom-gpt-{current_datetime}"
 my_aws_account = "079556679466"
 my_aws_region = "us-west-2"
 my_s3_bucket = "model-for-toucan-jasholtk-dev"
-model_s3_object_name = "model_archive.tar.gz"
+model_s3_object_name = "customGPT/model_archive.tar.gz"
 ecr_repo_name = "jasholtk/llm"
 
 primary_container = {
